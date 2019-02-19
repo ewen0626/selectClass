@@ -172,7 +172,7 @@ def login():
             max_square_image = crop_center(image, min_dim, min_dim)
             augmented_image = resize_to_256_square(max_square_image)
 
-            network_input_size = 227
+            #network_input_size = 227
 
             output_layer = 'loss:0'
             input_node = 'Placeholder:0'
@@ -207,13 +207,14 @@ def login():
 login()
 print("爽啦 破解")
 time.sleep(2)
+"""
 browser.get('http://course.uch.edu.tw/stdsel/System_D/sel_cos.asp?COSID=ET1018_%A5%D2&objid=Badd')
 result = EC.alert_is_present()(browser)
 if result:
     print(result.text)
 time.sleep(2)
 browser.back()
-
+"""
 
 #element = browser.find_element_by_xpath("/html/body/form/center[2]/table/tbody/tr/td/p[3]/input")
 

@@ -72,7 +72,7 @@ from PIL import Image
 import numpy as np
 import cv2
 #mypath = "../../cut code/cuted/13張/預測/"
-mypath = "crop/Train/"
+mypath = "crop/"
 files = listdir(mypath)
 print("分類開始")
 # Load from a file
@@ -106,7 +106,7 @@ for f in files:
 
 
 # The compact models have a network size of 227x227, the model requires this size.
-        network_input_size = 227
+        #network_input_size = 227
 
 # Crop the center for the specified network_input_Size
         #augmented_image = crop_center(augmented_image, network_input_size, network_input_size)

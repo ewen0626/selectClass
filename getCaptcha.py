@@ -45,21 +45,25 @@ while i<600:
     
     filename = dirpath+"crop/"+str(random.randrange(0,999999))+".jpg"
     crop_img = img[0:24, 0:33]
+    crop_img = cv2.resize(crop_img,(227,227))
     cv2.imwrite(filename,crop_img)
     
     
     crop_img = img[0:24, 33:62]
     filename = dirpath+"crop/"+str(random.randrange(0,999999))+".jpg"
+    crop_img = cv2.resize(crop_img,(227,227))
     cv2.imwrite(filename,crop_img)
     
     
     crop_img = img[0:24, 62:94]
     filename = dirpath+"crop/"+str(random.randrange(0,999999))+".jpg"
+    crop_img = cv2.resize(crop_img,(227,227))
     cv2.imwrite(filename,crop_img)
     
     
     crop_img = img[0:24, 94:124]
     filename = dirpath+"crop/"+str(random.randrange(0,999999))+".jpg"
+    crop_img = cv2.resize(crop_img,(227,227))
     cv2.imwrite(filename,crop_img)
     #cv2.imshow("123",crop_img)
     #cv2.waitKey(0)
