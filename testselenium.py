@@ -206,6 +206,15 @@ def login():
 
 login()
 print("爽啦 破解")
+time.sleep(2)
+browser.get('http://course.uch.edu.tw/stdsel/System_D/sel_cos.asp?COSID=ET1018_%A5%D2&objid=Badd')
+result = EC.alert_is_present()(browser)
+if result:
+    print(result.text)
+time.sleep(2)
+browser.back()
+
+
 #element = browser.find_element_by_xpath("/html/body/form/center[2]/table/tbody/tr/td/p[3]/input")
 
 

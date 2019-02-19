@@ -1,0 +1,3 @@
+﻿加選:http://course.uch.edu.tw/stdsel/System_D/sel_cos.asp?COSID=ET1018_%A5%D2&objid=Badd
+退選:http://course.uch.edu.tw/stdsel/System_D/del_cos.asp?COSID=ET1018_%A5%D2
+資訊:http://course.uch.edu.tw/stdsel/System_D/info_cos.asp?COSID=ET1008_%A5%D2&iTime=1550585231640
