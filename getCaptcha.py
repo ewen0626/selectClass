@@ -20,6 +20,7 @@ while i<600:
     i = i+1
     html = requests.get("http://course.uch.edu.tw/stdsel/System_D/dvcode.asp?")
     filename = dirpath+"captcha/"+str(random.randrange(0,999999))+".jpg"
+    #filename = dirpath+"test/"+str(random.randrange(0,999999))+".jpg"
     print(filename)
         
     with open(filename, 'wb') as file:
@@ -39,6 +40,9 @@ while i<600:
     #opening = cv2.morphologyEx(thresh, cv2.MORPH_OPEN, kernel)
     
     img = thresh
+    #cv2.imshow("123",img)
+    #cv2.imwrite(filename,img)
+    #cv2.waitKey(0)
         #cv2.line(img, (33, 0), (33, 24), (0, 0, 255), 1)
         #cv2.line(img, (62, 0), (62, 24), (0, 0, 255), 1)
         #cv2.line(img, (94, 0), (94, 24), (0, 0, 255), 1)
@@ -68,5 +72,5 @@ while i<600:
     #cv2.imshow("123",crop_img)
     #cv2.waitKey(0)
     #cv2.destroyAllWindows()
-
+    
 
